@@ -24,6 +24,10 @@
   background-color: #333;
 }
 
+.active{
+  background-color: green;
+}
+
 .navBar ul li{
   display: inline;
   float: left;
@@ -35,4 +39,12 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.journals {
+  padding: 5px 5px;
+}
+
+.journals h1{
+  text-align: center;
 }
