@@ -8,7 +8,7 @@
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 24px;
-  text-decoration: none;
+  color: inherit;
 }
 
 .topImage{
@@ -17,7 +17,7 @@
   opacity: 0.3;
 }
 
-.navBar ul{
+.navigationBar ul{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -29,12 +29,12 @@
   background-color: green;
 }
 
-.navBar ul li{
+.navigationBar ul li{
   display: inline;
   float: left;
 }
 
-.navBar ul li a{
+.navigationBar ul li a{
   display: block;
   color: white;
   text-align: center;
