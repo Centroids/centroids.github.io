@@ -48,3 +48,8 @@
 .journals h1{
   text-align: center;
 }
+
+.journals h2{
+  text-align: center;
+  font: Arial;
+}
