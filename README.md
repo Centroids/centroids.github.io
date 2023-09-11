@@ -1,2 +1,2 @@
 # centroids.github.io
-Personal testing and blogspace
+Personal site for Development, Blogspace, and Resume
