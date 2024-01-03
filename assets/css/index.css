@@ -51,11 +51,14 @@
   max-width: 50%;
   padding: .5em;
   text-align: center;
+  margin: 1%;
 }
 
 .selfPortrait {
+  position: relative;
+  top: auto;
+  padding: 1em;
   width: 75%;
-  border: 1 px solid black;
 }
 
 .rightHome {
@@ -63,10 +66,8 @@
   min-height: 100%;
   max-width: 50%;
   padding: .5em;
-  flex-wrap: wrap;
-  align-items: flex-start;
   text-align: center;
-  margin-right: 5%;
+  margin: 1%;
 }
 
 .navigationBar ul{
