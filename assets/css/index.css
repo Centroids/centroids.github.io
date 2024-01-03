@@ -2,19 +2,71 @@
   position: relative;
 }
 
+.body {
+  background: #000000;
+}
+
+.pictureHeader {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+
+.picOne {
+  position: relative;
+  opacity: 0.2;
+  border: 1px solid #000000;
+  width: 100%;
+  height: auto;
+}
+
+.picTwo {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+
 .center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  font-size: 24px;
-  color: inherit;
+  font-family: "Arial", Times, serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
 }
 
-.topImage{
+.homeContainer {
+  display: flex;
+  position: relative;
   width: 100%;
-  height: auto;
-  opacity: 0.3;
+  height: 75%;
+  max-height: 75%;
+}
+
+.leftHome {
+  flex: 0 1 50%;
+  min-height: 100%;
+  max-width: 50%;
+  padding: .5em;
+  text-align: center;
+}
+
+.selfPortrait {
+  width: 75%;
+  border: 1 px solid black;
+}
+
+.rightHome {
+  flex: 0 1 50%;
+  min-height: 100%;
+  max-width: 50%;
+  padding: .5em;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  text-align: center;
+  margin-right: 5%;
 }
 
 .navigationBar ul{
@@ -26,7 +78,7 @@
 }
 
 .active{
-  background-color: green;
+  background-color: purple;
 }
 
 .navigationBar ul li{
@@ -40,6 +92,12 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.aboutMe {
+  text-align: center;
+  padding: 20px 20px;
+  font-family: Arial;
 }
 
 .journals {
