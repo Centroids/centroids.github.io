@@ -10,3 +10,4 @@ gem 'httparty'
 gem 'pry-byebug'
 gem 'launchy'
 gem "dotenv", "~> 2.8"
+
