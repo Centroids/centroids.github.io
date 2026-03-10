@@ -1,2 +1,3 @@
 # centroids.github.io
-Personal site for Development, Blogspace, and Resume
+Personal site for Development
+(Currently hosting company login proof of concept)
