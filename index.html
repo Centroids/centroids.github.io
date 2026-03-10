@@ -1,87 +1,130 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Adrian De La Rosa's Site</title>
-  <link rel="stylesheet" href="assets/css/index.css">
-</head>
-<body style="background-color:#D3D3D3">
-  <div class="header">
-    <!-- <a href="index.html"> -->
-    <div class="pictureHeader">  
-    <img class="picOne" src="assets/images/sfsu-panorama.jpg" alt="SF State Panorama">
-    <a href="https://sfsu.edu>"><img class="picTwo" src="assets/images/logo.png" alt="SFSU Logo"></a>
-    </div>  
-    <div class="center">Adrian De La Rosa</div>
-    </a>
-  </div>
-  <div class="navigationBar">
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="https://www.linkedin.com/in/adrian-de-la-rosa/">Resume</a></li>
-      <li><a href="index.html#aboutMe">About Me</a></li>
-      <li><a href="https://github.com/Centroids/">GitHub</a></li>
-      <li><a href="https://github.com/Centroids/">Projects</a></li>
-      <li><a href="assets/html/journals.html">Journals</a></li>
-    </ul>
-  </div>
-
-  <div class="homeContainer">
-    <div class="leftHome">
-      <br>
-      <br>
-      <p style=
-      "
-      font-size:24px; 
-      background-color:white; 
-      display:inline; 
-      padding: 1px;
-      overflow: hidden;
-      "> Myself, (Adrian), on the left </p>
-      <br>
-      <br>
-      <img class="selfPortrait" src="assets/images/portaitOne.jpg">
-      <br>
-      <br>
-      <br>
+<html lang="en">
+  <head>
+    <title>Accu-Login</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Accu-Login</h1>
+    </header>
+    <div class="addressForm">
+    <form>
+      <fieldset>
+        <legend>Job Address</legend>
+        <div id="flexbox-JobAddress">
+          <tb>
+            <tr>
+              <th>
+              <input type="field" id="workAddress" style="padding-left: 5px; text-align: center; float: left;"></input>
+              </th>
+            </tr>
+          </tb>
+        </div>
+      </fieldset>
     </div>
+    </form>
+    <div class="loginForm">
+    <form>
+      <fieldset>
+        <legend>Tech Select</legend>
+        
+        <input type="radio" id="adrian" name="tech" value="AD"></input>
+        <label for="adrian">Adrian</label>
 
-    <div class="rightHome">
-      <br>
-      <br>
-      <p style="font-size:24px; background-color:white; display:inline; padding: 10px">About Me</p>
-      <br>
-      <br>
-      <p style="text-align:left; font-family: Arial, Helvetica, sans-serif;
-      background-color: white; padding:1em"> Hi, 
-        <br>
-        <br> 
-        I am a 25 year old college graduate from San Francisco State University
-        with a B.A in Classics. Prior to my switch to studying the arts, I studied Computer Science at SF State for 
-        a number of years on and off: beginning in 2016, and up until 2022. I studied in
-        classes such as Operating Systems (CSC410), Unix Systems and 
-        Web Development (CSC 317), and Programming Methodology (CSC340), where I gained an appreciation for technical know-how. 
-        <br>
-        <br>
-        Projects that I've completed range from SQL schemas for production servers, to virtual file systems, and data redundancy testing.
-        Before my switch in interest to the technical side of computer hardware, I worked in networking and server management for a brief period in my youth. The longest tenured
-        project of mine was archival work for a university that I began in late 2017
-        and saw well to the project's end in May 2023. 
-      </p>
-      <br>
-      <br>
-      <p style="text-align:center; font-family: Arial, Helvetica, sans-serif;
-      background-color: white; display:inline">
-        I am open to any and all questions at centroid7(at)gmail(dot)com
-      </p>  
+        <input type="radio" id="fred" name="tech" value="FS"></input>
+        <label for="fred">Fred</label>
+
+        <input type="radio" id="marlon" name="tech" value="MB"></input>
+        <label for="marlon">Marlon</label>
+
+        <input type="radio" id="clinton" name="tech" value="MB"></input>
+        <label for="clinton">Clinton</label>
+
+        <input type="radio" id="arian" name="engineer" value="AT"></input>
+        <label for="arian">Arian</label>
+
+        <input type="radio" id="swapnil" name="engineer" value="SG"></input>
+        <label for="swapnil">Swapnil</label>
+
+      </fieldset>
+    </form>
     </div>
-  </div>
-  <div class="aboutMe">
-    <h1> Thanks for reading. </h1>
-  </div>
-</body>
-<footer>
-</footer>
+    <div class="coworkerForm">
+      <form>
+        <fieldset>
+          <legend>Coworker Select</legend>
+
+          <input type="checkbox" id="adrianField" name="field">
+          <label for="adrianField">AD</label>
+
+          <input type="checkbox" id="fredField" name="field">
+          <label for="fredField">FS</label>
+
+          <input type="checkbox" id="marlonField" name="field">
+          <label for="marlonField">MB</label>
+
+          <input type="checkbox" id="clintonField" name="field">
+          <label for="clintonField">CW</label>
+
+          <input type="checkbox" id="arianField" name="field">
+          <label for="arianField">AT</label>
+
+          <input type="checkbox" id="swapnilField" name="field">
+          <label for="swapnilField">SG</label>
+
+        </fieldset>
+      </form>
+    </div>
+    <br>
+    <div id="button">
+    <button id="clockinButton" type="button" onclick="notifOne()">Clock-in</button>
+    <button id="clockoutButton" type="button" onclick="notifTwo()">Clock-out</button>
+    <p id="date" style="color: black; font-size: small;"></p>
+    </div>
+    <script>
+      const d = new Date();
+      let text = d.toString();
+      document.getElementById("date").innerHTML = text;
+
+      function collectFormData() {
+        const address = document.getElementById("workAddress").value.trim();
+
+        const techRadio = document.querySelector('.loginForm input[name="tech"]:checked');
+        const engineerRadio = document.querySelector('.loginForm input[name="engineer"]:checked');
+        const tech = techRadio ? techRadio.labels[0].textContent : "None";
+        const engineer = engineerRadio ? engineerRadio.labels[0].textContent : "None";
+
+        const coworkerCheckboxes = document.querySelectorAll('.coworkerForm input[name="field"]:checked');
+        const coworkers = coworkerCheckboxes.length
+          ? Array.from(coworkerCheckboxes).map(cb => cb.labels[0].textContent).join(", ")
+          : "None";
+
+        return { address, tech, engineer, coworkers };
+      }
+
+      function notifOne() {
+        const { address, tech, engineer, coworkers } = collectFormData();
+        alert(
+          "Clocked in at:\n" + text +
+          "\n\nJob Address: " + (address || "Not provided") +
+          "\nTech: " + tech +
+          "\nEngineer: " + engineer +
+          "\nCoworkers: " + coworkers
+        );
+      }
+
+      function notifTwo() {
+        const { address, tech, engineer, coworkers } = collectFormData();
+        alert(
+          "Clocked out at:\n" + text +
+          "\n\nJob Address: " + (address || "Not provided") +
+          "\nTech: " + tech +
+          "\nEngineer: " + engineer +
+          "\nCoworkers: " + coworkers
+        );
+      }
+    </script>
+  </body>
 </html>
